@@ -18,7 +18,7 @@ export const Row = ({ title, fetchURL, isLargeRow }) => {
     setMovies(request.data.results);
   }
 
-  console.log(movies);
+  // console.log(movies);
 
   return (
     <div className="row">

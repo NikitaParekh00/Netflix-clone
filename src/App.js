@@ -2,10 +2,17 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Row } from "./components/Row";
 import requests from "./requests";
+import { Banner } from "./components/Banner";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <Navbar />
+      
+      {/* Banner */}
+      <Banner />
+
+      {/* Rows */}
       <Row
         title="NETFLIX ORIGINALS"
         fetchURL={requests.fetchNetflixOriginals}
