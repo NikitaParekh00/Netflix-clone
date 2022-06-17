@@ -36,6 +36,7 @@ export const Row = ({ title, fetchURL, isLargeRow }) => {
       movieTrailer(movie?.name || "")
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
+          // console.log(url, urlParams);
           setTrailerUrl(urlParams.get("v"));
         })
         .catch((err) => console.log(err));
